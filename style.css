@@ -1,8 +1,11 @@
+/* Estilo base */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: white;
   color: #222;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease-in-out;
 }
 
 header {
@@ -10,6 +13,7 @@ header {
   color: white;
   text-align: center;
   padding: 1.5em;
+  transition: background-color 0.3s ease;
 }
 
 nav {
@@ -17,6 +21,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  transition: background-color 0.3s ease;
 }
 
 nav a {
@@ -24,6 +29,11 @@ nav a {
   text-decoration: none;
   margin: 10px;
   font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffcc;
 }
 
 main {
@@ -32,6 +42,14 @@ main {
 
 section {
   margin-bottom: 40px;
+  transition: opacity 0.3s ease;
+}
+
+.artigos-lista li {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-left: 5px solid #0033cc;
+  background-color: #f4f4f4;
 }
 
 footer {
@@ -51,4 +69,5 @@ footer {
     margin: 10px 0;
   }
 }
+
 
